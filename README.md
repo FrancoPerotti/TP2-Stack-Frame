@@ -2,7 +2,7 @@
 Este el repositorio del trabajo práctico N° 2 de la materia de Sistemas de Computación
 
 ## Grupo
-- **Ataque x86**
+- *Ataque x86*
 
 ## Integrantes
 -  *Arnaudo, Federico Andres*
@@ -39,9 +39,11 @@ Para ejecutar el script de python
 
 ```as --64 -g -o to_int.o to_int.s```
 
+```as --64 -g -o plus_one.o plus_one.s```
+
 ```gcc -g -O0 -c -o converter.o converter.c```
 
-```gcc -o programa converter.o to_int.o```
+```gcc -o programa converter.o to_int.o plus_one.o```
 
 ## GDB
 
