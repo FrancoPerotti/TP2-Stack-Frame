@@ -1,5 +1,6 @@
 # C
 *.o
+*.so
 *.obj
 *.gch
 *.exe
