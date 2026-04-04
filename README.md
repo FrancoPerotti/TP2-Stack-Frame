@@ -6,7 +6,7 @@ Este el repositorio del trabajo práctico N° 2 de la materia de Sistemas de Com
 
 ## Integrantes
 -  *Arnaudo, Federico Andres*
-- 
+-  *Bonfils, Matías Gabriel
 - 
 
 # Script de Python - main.py
