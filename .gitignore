@@ -1,0 +1,36 @@
+# C
+*.o
+*.so
+*.obj
+*.gch
+*.exe
+*.out
+*.app
+*.dSYM/
+core
+*.d
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Common
+.DS_Store
+*.swp
+*.swo
