@@ -96,6 +96,12 @@ Este comando:
 - compila `converter.c`
 - genera la biblioteca compartida `to_int_plus_one.so`
 
+Para compilar con símbolos de depuración para GDB:
+
+```make debug```
+
+Este comando recompila el proyecto usando `-g -O0` en C y `--64 -g` en assembler.
+
 Para ejecutar el script de Python:
 
 ```python3 ./main.py```
@@ -119,7 +125,11 @@ Compilación normal del proyecto:
 
 ```gcc -shared -o to_int_plus_one.so converter.o to_int.o plus_one.o```
 
-Si se quiere depurar con GDB con símbolos de depuración, conviene recompilar manualmente con:
+Si se quiere depurar con GDB con símbolos de depuración, se puede usar directamente:
+
+```make debug```
+
+Equivale a recompilar manualmente con:
 
 ```as --64 -g -o to_int.o to_int.s```
 
