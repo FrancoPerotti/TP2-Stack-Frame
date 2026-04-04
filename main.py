@@ -2,18 +2,18 @@ import requests
 import ctypes
 
 # Cargamos la libreria 
-lib_toIntPlusOne = ctypes.CDLL('./toIntPlusOne.so')
+lib_converter = ctypes.CDLL('./to_int_plus_one.so')
 
 # Definimos los tipos de los argumentos de la función factorial
-lib_toIntPlusOne.floatToIntPulsOne.argtypes = (ctypes.c_float,)
+lib_converter.to_int_plus_one.argtypes = (ctypes.c_float,)
 
 # Definimos el tipo del retorno de la función factorial
-lib_toIntPlusOne.floatToIntPulsOne.restype = ctypes.c_int
+lib_converter.to_int_plus_one.restype = ctypes.c_int
 
 # Creamos nuestra función factorial en Python
 # hace de Wrapper para llamar a la función de C
-def toIntPlusOne(num):
-    return  lib_toIntPlusOne.floatToIntPulsOne(num)
+def float_to_int_plus_one(num):
+    return  lib_converter.to_int_plus_one(num)
 
 
 flag = True
@@ -35,7 +35,7 @@ while(flag):
         if item["value"] == None:
             continue
         print(f"date: {item["date"]}, value: {item["value"]}\n")
-        int_converted = toIntPlusOne(item["value"])
+        int_converted = float_to_int_plus_one(item["value"])
         print(f"date: {item["date"]}, value: {int_converted}\n")
 
     flag = input("Continuar --> 1\nFinalizar --> 0\n")
