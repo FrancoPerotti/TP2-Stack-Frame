@@ -9,6 +9,7 @@ Trabajo práctico de Sistemas de Computación sobre consumo de la API del Banco 
 ## Integrantes
 
 - *Arnaudo, Federico Andres*
+- *Bonfils, Matías Gabriel*
 - *Perotti, Franco José*
 
 ## Descripción
